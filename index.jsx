@@ -1,25 +1,11 @@
-// PAGE 1
-export const inc = () =>
-{
-    return{
-        type: "INC"
+// PAGE 3
+import calc from "./calc";
+import {combineReducers} from 'redux';
+
+const desire = combineReducers(
+    {
+        calc,
     }
-}
-export const dic = () =>
-{
-    return{
-        type: "DIC"
-    }
-}
-export const mul = () =>
-{
-    return{
-        type: "MUL"
-    }
-}
-export const div = () =>
-{
-    return{
-        type: "DIV"
-    }
-}
+);
+
+export default desire;
